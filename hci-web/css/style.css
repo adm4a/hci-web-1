@@ -25,15 +25,15 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-top: 40px;
-    border-bottom: none; /* Remove the blue underline */
+    border-bottom: none; 
 }
 
 .logo {
     color: white;
     font-family: "Lato", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 28px;
-    text-decoration: none; /* Remove the default underline */
+    text-decoration: none; 
 }
 
 .finder {
@@ -88,7 +88,7 @@ body {
 .content-section {
     padding-top: 155px;
     color: white;
-    display: flex; /* Add flex to align items */
+    display: flex; 
 }
 
 .text-container {
@@ -132,11 +132,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.2s ease; /* Add transition for smooth animation */
+    transition: background-color 0.2s ease; 
 }
 
 .button:hover {
-    background-color: #167E13; /* Change color on hover */
+    background-color: #167E13; 
 }
 
 .button-text {
@@ -148,8 +148,8 @@ body {
 }
 
 .image-container {
-    margin-left: auto; /* Move the image to the right */
-    margin-top: -60px; /* Adjust the margin-top value as needed */
+    margin-left: auto; 
+    margin-top: -60px; 
     filter: drop-shadow(30px 10px 80px #212121);
 }
 
@@ -174,8 +174,8 @@ body {
     font-size: 45px;
     letter-spacing: 2%;
     color: black;
-    display: inline-block; /* Ensure it stays in the same line */
-    margin-bottom: 0; /* Remove the bottom margin */
+    display: inline-block; 
+    margin-bottom: 0;
 }
 
 .see-all {
@@ -196,7 +196,7 @@ body {
     height: 5px;
     background-color: #44A742;
     margin-top: 15px;
-    border-radius: 15px; /* Add border radius */
+    border-radius: 15px;
 }
 .rating {
     display: flex;
@@ -214,7 +214,7 @@ body {
   padding: 13px 20px;
   position: absolute;
   bottom: 40px;
-  left: 70px; /* Updated position to left */
+  left: 70px; 
 }
 
 .card-wrap {
@@ -224,7 +224,7 @@ body {
   padding: 13px 20px;
   position: absolute;
   bottom: -10px;
-  right: -45px; /* Updated position to right */
+  right: -45px; 
 }
 
 
@@ -264,7 +264,7 @@ body {
   box-sizing: border-box;
 }
 
-/* .flip-card-container */
+
 .flip-card-container {
   --hue: 150;
   --primary: hsl(var(--hue), 50%, 50%);
@@ -283,7 +283,6 @@ body {
   perspective: 1000px;
 }
 
-/* .flip-card */
 .flip-card {
   width: inherit;
   height: inherit;
@@ -293,13 +292,11 @@ body {
   transition: .6s .1s;
 }
 
-/* hover and focus-within states */
 .flip-card-container:hover .flip-card,
 .flip-card-container:focus-within .flip-card {
   transform: rotateY(180deg);
 }
 
-/* .card-... */
 .card-front,
 .card-back {
   width: 100%;
@@ -343,7 +340,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 10px;
 }
 
@@ -356,24 +353,24 @@ body {
 }
 
 
-/* .card-front */
+
 .card-front {
   transform: rotateY(0deg);
   z-index: 2;
 }
 
-/* .card-back */
+
 .card-back {
   transform: rotateY(180deg);
   z-index: 1;
 }
 
-/* figure */
+
 figure {
   z-index: -1;
 }
 
-/* figure, .img-bg */
+
 figure,
 .img-bg {
   position: absolute;
@@ -384,7 +381,7 @@ figure,
   height: 100%;
 }
 
-/* img */
+
 img {
   height: 100%;
   width: 100%;
@@ -406,7 +403,7 @@ img {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
 }
 
-/* hover state */
+
 .flip-card-container:hover .card-front .img-bg::before {
   width: 6px;
   border-left-color: var(--primary);
