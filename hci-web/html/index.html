@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shourtcout icon" type="image/png" href="../images/recipes/fflogo.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,9 +36,17 @@
     <div class="hero-section">
         <div class="container">
             <div class="navbar">
-                <a href="#" class="logo"> 
+              <div class="search-bar-img">
+                <img src="../images/recipes/Vector.png" alt="search-bar-img" class="icon2">
+              </div>
+                <a href="./index.html" class="logo"> 
                     Flavor<span class="finder">Finder</span>
                 </a>
+                <div class="hamburger" onclick="toggleMenu()">
+                  <div class="hamburger-line"></div>
+                  <div class="hamburger-line"></div>
+                  <div class="hamburger-line"></div>
+              </div>
                 <div class="navlinks">
                     <a href="./index.html" class="navlink">Home</a>
                     <a href="./recipes.html" class="navlink">Recipes</a>
@@ -96,6 +106,18 @@
             </div>
         </div>
     </div>
+    <div class="slide-menu" style="width: 0px">
+      <div class="slide-menu-nav">
+        <a href="./index.html" class="logo"> 
+          Flavor<span class="finder" id="menu-finder">Finder</span>
+      </a>
+      <div class="slide-menu-nav-div">
+        <a href="./index.html" class="navlink">Home</a>
+        <a href="./recipes.html" class="navlink">Recipes</a>
+        <a href="./myrecipes.html" class="navlink">My Recipes</a>
+      </div>
+      </div>
+    </div>
 
     <div class="second-section">
         <div class="container">
@@ -104,25 +126,19 @@
                     <h2 class="featured-recipes">Featured Recipes</h2>
                     <div class="divider"></div>
                 </div>
-                <a href="#" class="see-all">See All</a>
+                <a href="./recipes.html" class="see-all">See All</a>
             </div>
+
+            <!-- <div class="cards">
+              <div class="container">
+                
+              </div>
+            </div> -->
     
-            <div class="row mt-5" style="
-                margin-right: 0px;
-                margin-left: 0px;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                margin-top: 50px;
-            ">
+            <div class="mt-5">
+              
               <!-- 1. kartica -->
-              <div class="col-3" style="
-                width: 400px;
-                height: 510px;
-                padding-left: 0px;
-                padding-right: 0px;
-                margin-bottom: 30px;
-            ">
+              <div class="col-3"> 
                 <div class="flip-card-container" style="--hue: 220">
                   <div class="flip-card">
                     <div class="card-front">
@@ -141,7 +157,7 @@
                       ">
                       <div>
                         <div class="card-head-style" style="display: flex; justify-content: space-between;">
-                          <div style="margin-bottom: 55px;">
+                          <div class="margin-bottom">
                             <h2 class="flip-card-head">
                               Italian Pasta
                             </h2>
@@ -163,13 +179,7 @@
                 </div>
               </div>
               <!-- 2. kartica -->
-              <div class="col-3" style="
-                width: 400px;
-                height: 510px;
-                padding-left: 0px;
-                padding-right: 0px;
-                margin-right: 0px;
-            ">
+              <div class="col-3">
                 <div class="flip-card-container" style="--hue: 220">
                   <div class="flip-card">
                     <div class="card-front">
@@ -188,7 +198,7 @@
                       ">
                       <div>
                         <div class="card-head-style" style="display: flex; justify-content: space-between;">
-                          <div style="margin-bottom: 55px;">
+                          <div class="margin-bottom">
                             <h2 class="flip-card-head">
                               Pizza
                             </h2>
@@ -209,12 +219,7 @@
                 </div>
               </div>
               <!-- 3. kartica -->
-              <div class="col-3" style="
-                padding-left: 0px;
-                padding-right: 0px;
-                width: 400px;
-                height: 510px;
-            ">
+              <div class="col-3">
                 <div class="flip-card-container" style="--hue: 220">
                   <div class="flip-card">
                     <div class="card-front">
@@ -233,7 +238,7 @@
                       ">
                       <div>
                         <div class="card-head-style" style="display: flex; justify-content: space-between;">
-                          <div style="margin-bottom: 55px;">
+                          <div class="margin-bottom">
                             <h2 class="flip-card-head">
                               Salad
                             </h2>
@@ -255,12 +260,7 @@
               </div>
 
               <!-- 4. kartica -->
-              <div class="col-3" style="
-                padding-left: 0px;
-                padding-right: 0px;
-                width: 400px;
-                height: 510px;
-            ">
+              <div class="col-3">
                 <div class="flip-card-container" style="--hue: 220">
                   <div class="flip-card">
                     <div class="card-front">
@@ -279,7 +279,7 @@
                       ">
                       <div>
                         <div class="card-head-style" style="display: flex; justify-content: space-between;">
-                          <div style="margin-bottom: 55px;">
+                          <div class="margin-bottom">
                             <h2 class="flip-card-head">
                               Salmon
                             </h2>
@@ -301,12 +301,7 @@
               </div>
 
               <!-- 5. kartica -->
-              <div class="col-3" style="
-                padding-left: 0px;
-                padding-right: 0px;
-                width: 400px;
-                height: 510px;
-            ">
+              <div class="col-3">
                 <div class="flip-card-container" style="--hue: 220">
                   <div class="flip-card">
                     <div class="card-front">
@@ -325,7 +320,7 @@
                       ">
                       <div>
                         <div class="card-head-style" style="display: flex; justify-content: space-between;">
-                          <div style="margin-bottom: 55px;">
+                          <div class="margin-bottom">
                             <h2 class="flip-card-head">
                               Ćevapi
                             </h2>
@@ -347,12 +342,7 @@
               </div>
 
               <!-- 6. kartica -->
-              <div class="col-3" style="
-                padding-left: 0px;
-                padding-right: 0px;
-                width: 400px;
-                height: 510px;
-            ">
+              <div class="col-3">
                 <div class="flip-card-container" style="--hue: 220">
                   <div class="flip-card">
                     <div class="card-front">
@@ -371,7 +361,7 @@
                       ">
                       <div>
                         <div class="card-head-style" style="display: flex; justify-content: space-between;">
-                          <div style="margin-bottom: 55px;">
+                          <div class="margin-bottom">
                             <h2 class="flip-card-head">
                               Chocolate Cake
                             </h2>
@@ -400,5 +390,25 @@
       </div>
     </footer>
     </div>
+    <script>
+      function toggleMenu() {
+          const slideMenu = document.querySelector('.slide-menu');
+          slideMenu.style.width = slideMenu.style.width === '0px' ? '290px' : '0px';
+
+          if (slideMenu.style.width === '290px') {
+        document.addEventListener('click', closeMenuOnClickOutside);
+    } else {
+        document.removeEventListener('click', closeMenuOnClickOutside);
+    }
+      }
+      function closeMenuOnClickOutside(event) {
+    const slideMenu = document.querySelector('.slide-menu');
+    
+    if (!event.target.closest('.slide-menu') && !event.target.closest('.hamburger')) {
+        slideMenu.style.width = '0px';
+        document.removeEventListener('click', closeMenuOnClickOutside);
+    }
+}
+  </script>
 </body>
 </html>
