@@ -452,6 +452,10 @@ img {
   flex-wrap: wrap;
 }
 
+.margin-bottom{
+  margin-bottom: 55px;
+}
+
 
 
 /* responsive */
