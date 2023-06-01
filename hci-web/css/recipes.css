@@ -80,6 +80,7 @@
 }
 
 .search-bar {
+    display: flex;
     background-color: #7F9B7F;
     opacity: 0.42;
     border-radius: 15px;
@@ -93,6 +94,10 @@
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 2%;
+}
+
+.search-bar-img1{
+  margin-right: 5px;
 }
 
 ::placeholder {
@@ -351,6 +356,11 @@ img {
     width: 24px;
     height: 24px;
     margin-right: 7px;
+}
+
+.icon2{
+  object-fit: cover;
+  height: 20px;
 }
 
 .card-header {
