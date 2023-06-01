@@ -69,6 +69,7 @@ body {
 }
 
 .search-bar {
+    display: flex;
     background-color: #7F9B7F;
     opacity: 0.42;
     border-radius: 15px;
@@ -82,6 +83,10 @@ body {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 2%;
+}
+
+.search-bar-img1{
+  margin-right: 5px;
 }
 
 .search-bar-img{
@@ -215,6 +220,12 @@ body {
     height: 24px;
     margin-right: 7px;
 }
+
+.icon2{
+  object-fit: cover;
+  height: 20px;
+}
+
 .card-wrapper {
   width: 263px;
   background-color: white;
